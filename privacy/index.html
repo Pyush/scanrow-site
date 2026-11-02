@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Scanrow</title>
+  <style>
+    :root {
+      --primary: #0F766E;
+      --bg: #0F172A;
+      --card-bg: #1E293B;
+      --text: #F8FAFC;
+      --muted: #94A3B8;
+      --border: #334155;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 32px 24px;
+      background: var(--card-bg);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+    }
+    .icon {
+      width: 52px;
+      height: 52px;
+      background: var(--primary);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      color: white;
+    }
+    h1 { margin: 0; font-size: 26px; font-weight: 800; }
+    h2 { font-size: 20px; color: #34D399; margin-top: 32px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+    p, li { color: #CBD5E1; font-size: 15px; }
+    ul { padding-left: 20px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: rgba(16, 124, 65, 0.2);
+      color: #34D399;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      background: rgba(16, 124, 65, 0.25);
+      border: 1px solid #0F766E;
+      border-radius: 20px;
+      color: #34D399;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    a { color: #34D399; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="icon">📊</div>
+      <div>
+        <h1>Scanrow Privacy Policy</h1>
+        <div style="color: var(--muted); font-size: 13px; margin-top: 4px;">Last Updated &amp; Effective: November 2, 2026</div>
+      </div>
+    </div>
+
+    <div class="badge">🛡️ On-Device Processing</div>
+
+    <h2>1. The Core Privacy Principle: On-Device Processing</h2>
+    <p>Scanrow ("we", "our", or "us") was designed with privacy as its primary engineering requirement. All OCR text recognition, table boundary clustering, and spreadsheet file compilation are executed <strong>on your device</strong> using Google ML Kit on-device machine learning.</p>
+    <p>Scanrow does not upload your documents, invoices or spreadsheets. They leave your device only when you export or share them. Buying Pro needs an internet connection, which goes through Google Play or Apple.</p>
+
+    <h2>2. Data We Do NOT Receive</h2>
+    <ul>
+      <li>No photos, camera frames, or document scans.</li>
+      <li>No extracted text, numbers, or tabular data.</li>
+      <li>No personal identifiers (names, emails, phone numbers).</li>
+      <li>No location or GPS coordinates.</li>
+      <li>No advertising identifiers or tracking cookies.</li>
+    </ul>
+
+    <h2>3. Device Permissions & Usage</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Permission</th>
+          <th>Platform</th>
+          <th>Usage Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Camera</strong></td>
+          <td>Android & iOS</td>
+          <td>Used strictly to display the viewfinder and take photos of physical tables when requested by the user.</td>
+        </tr>
+        <tr>
+          <td><strong>Photos / Media</strong></td>
+          <td>Android & iOS</td>
+          <td>Allows users to pick existing document photos or multi-page table images from their local gallery.</td>
+        </tr>
+        <tr>
+          <td><strong>Files Access</strong></td>
+          <td>Android & iOS</td>
+          <td>Allows selecting local PDF files for table extraction and saving exported .xlsx / .csv files.</td>
+        </tr>
+        <tr>
+          <td><strong>In-App Billing</strong></td>
+          <td>Android & iOS</td>
+          <td>Managed exclusively by Google Play Billing and Apple StoreKit for secure subscription transactions.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>4. Data Storage & Retention</h2>
+    <p>The photos and PDF page images behind your scans are kept in the app's private storage so you can compare a table with its original. Deleting a saved scan deletes its images, and images from scans you never save are removed automatically after about a day.</p>
+    <p>If the app hits an error, it records the error type and technical stack trace on your device. This log contains no scans or table contents and is only sent if you choose Share diagnostic report in Settings.</p>
+    <p>All scanned tables, multi-sheet workbooks, and scan histories are stored in your device's private SQLite database. You can delete any saved record at any time in the app. Uninstalling the app permanently deletes all local data.</p>
+
+    <h2>5. Third-Party Services & Payments</h2>
+    <p>Google ML Kit reads images on your device. Google's ML Kit disclosure lists diagnostic data the SDK sends to Google over HTTPS: device model and OS version, app package and version, a per-installation identifier, performance metrics, image format and size settings, and error codes. Google's list does not include images or recognized text. See <a href="https://developers.google.com/ml-kit/android-data-disclosure">the ML Kit Android data disclosure</a>.</p>
+    <p>Payment information is processed directly by Apple Inc. (Apple App Store) or Google LLC (Google Play Store). We never collect or store your billing address, credit card numbers, or bank account details.</p>
+
+    <h2>6. Contact</h2>
+    <p>If you have any questions regarding this Privacy Policy, please contact us at: <a href="mailto:androidpyus@gmail.com">androidpyus@gmail.com</a>.</p>
+  </div>
+</body>
+</html>
