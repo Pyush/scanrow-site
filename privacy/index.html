@@ -88,7 +88,7 @@
       <div class="icon">📊</div>
       <div>
         <h1>Scanrow Privacy Policy</h1>
-        <div style="color: var(--muted); font-size: 13px; margin-top: 4px;">Last Updated &amp; Effective: November 2, 2026</div>
+        <div style="color: var(--muted); font-size: 13px; margin-top: 4px;">Last Updated &amp; Effective: November 3, 2026</div>
       </div>
     </div>
 
@@ -96,7 +96,7 @@
 
     <h2>1. The Core Privacy Principle: On-Device Processing</h2>
     <p>Scanrow ("we", "our", or "us") was designed with privacy as its primary engineering requirement. All OCR text recognition, table boundary clustering, and spreadsheet file compilation are executed <strong>on your device</strong> using Google ML Kit on-device machine learning.</p>
-    <p>Scanrow does not upload your documents, invoices or spreadsheets. They leave your device only when you export or share them. Buying Pro needs an internet connection, which goes through Google Play or Apple.</p>
+    <p>Scanrow does not upload your documents, invoices or spreadsheets. They leave your device only when you export or share them. Buying Pro needs an internet connection, which goes through Google Play.</p>
 
     <h2>2. Data We Do NOT Receive</h2>
     <ul>
@@ -112,30 +112,25 @@
       <thead>
         <tr>
           <th>Permission</th>
-          <th>Platform</th>
           <th>Usage Purpose</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td><strong>Camera</strong></td>
-          <td>Android & iOS</td>
           <td>Used strictly to display the viewfinder and take photos of physical tables when requested by the user.</td>
         </tr>
         <tr>
-          <td><strong>Photos / Media</strong></td>
-          <td>Android & iOS</td>
-          <td>Allows users to pick existing document photos or multi-page table images from their local gallery.</td>
+          <td><strong>Photo Picker</strong></td>
+          <td>Uses the Android system photo picker to import document photos. The app does not ask for access to your photo library and can only read the photos you choose.</td>
         </tr>
         <tr>
-          <td><strong>Files Access</strong></td>
-          <td>Android & iOS</td>
-          <td>Allows selecting local PDF files for table extraction and saving exported .xlsx / .csv files.</td>
+          <td><strong>File Picker</strong></td>
+          <td>Uses the Android system document picker to import PDF files. The app can only read the files you choose. Exported .xlsx and .csv files go wherever you send them through Android's share sheet.</td>
         </tr>
         <tr>
           <td><strong>In-App Billing</strong></td>
-          <td>Android & iOS</td>
-          <td>Managed exclusively by Google Play Billing and Apple StoreKit for secure subscription transactions.</td>
+          <td>Managed exclusively by Google Play Billing for secure subscription transactions.</td>
         </tr>
       </tbody>
     </table>
@@ -146,10 +141,14 @@
     <p>All scanned tables, multi-sheet workbooks, and scan histories are stored in your device's private SQLite database. You can delete any saved record at any time in the app. Uninstalling the app permanently deletes all local data.</p>
 
     <h2>5. Third-Party Services & Payments</h2>
-    <p>Google ML Kit reads images on your device. Google's ML Kit disclosure lists diagnostic data the SDK sends to Google over HTTPS: device model and OS version, app package and version, a per-installation identifier, performance metrics, image format and size settings, and error codes. Google's list does not include images or recognized text. See <a href="https://developers.google.com/ml-kit/android-data-disclosure">the ML Kit Android data disclosure</a>.</p>
-    <p>Payment information is processed directly by Apple Inc. (Apple App Store) or Google LLC (Google Play Store). We never collect or store your billing address, credit card numbers, or bank account details.</p>
+    <p>Google ML Kit reads images on your device. Google's ML Kit disclosure lists diagnostic data the SDK sends to Google over HTTPS: device model and OS version, app package and version, a per-installation identifier, performance metrics, image format and size settings, and error codes. Google's list does not include images or recognized text. We do not receive this data and cannot access or delete it. See <a href="https://developers.google.com/ml-kit/android-data-disclosure">the ML Kit Android data disclosure</a>.</p>
+    <p>Payment information is processed directly by Google LLC (Google Play Store). We never collect or store your billing address, credit card numbers, or bank account details.</p>
 
-    <h2>6. Contact</h2>
+    <h2>6. Children's Privacy</h2>
+    <p>Scanrow is a productivity tool intended for adults and is not directed at children. We do not knowingly collect personal information from children, and the App does not ask for anyone's age. The Google ML Kit diagnostic data described in section 5 is sent in the same way for every user.</p>
+    <p>If you believe a child has sent us personal information, for example by emailing support, contact us and we will delete it.</p>
+
+    <h2>7. Contact</h2>
     <p>If you have any questions regarding this Privacy Policy, please contact us at: <a href="mailto:androidpyus@gmail.com">androidpyus@gmail.com</a>.</p>
   </div>
 </body>
